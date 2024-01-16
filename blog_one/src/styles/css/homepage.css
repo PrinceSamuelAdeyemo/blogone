@@ -1,0 +1,138 @@
+body{
+    overflow-x: hidden;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav_bar div{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    width: 80%;
+}
+.nav_bar_con{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.intro{
+    /*margin-top: 5rem;*/
+    background-color: skyblue;
+    height: 80vh;
+}
+
+.intro p:first-of-type{
+    font-size: 3rem;
+}
+
+.intro p:nth-of-type(2){
+    font-size: 1.8rem;
+}
+
+.intro input:first-of-type{
+    width: 30rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.blogs-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs-intro p{
+    line-height: 1rem;
+    text-decoration: solid;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.blogs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: inherit;
+}
+.blogs .blog-categories{
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+
+.blogs .latestblogs{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latestblogs div:first{
+    width: 100%;
+}
+
+.latestblogs .news-insight{
+    height: 35%;
+    width: 33.33%;
+}
+
+.latestblogs .news-insight .insight-padding{
+    background-color: white;
+    padding: 1rem;
+    height: 100%;
+    
+}
+
+.insight-padding .main-news-insight{
+    background-color: skyblue;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.main-news-insight .news-insight-pic-div{
+    background-color: red;
+    height: 12rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.news-insight-pic-div .news-insight-pic{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-news-insight .news-insight-timestamp{
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.news-insight-timestamp p{
+    float: right;
+    background-color: inherit;
+}
+
+.news-insight-timestamp p:first{
+    float: left;
+}
