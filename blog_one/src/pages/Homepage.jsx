@@ -40,7 +40,7 @@ const Homepage = () => {
           <p>The latest articles and courses to improve your crypto knowledge.</p>
           <p>Master Blockchain, Web3, Defi, NFT, Game-Fi and many more.</p>
 
-          <input type='email' placeholder='Email Address'></input>
+          <input type='email' placeholder='Email Address' />
           <button>Subscribe</button>
         </div>
 
@@ -50,7 +50,7 @@ const Homepage = () => {
 
         <div className='blogs'>
           <div className='blog-categories'>
-            <p><h3>Categories</h3></p>
+            <p>Categories</p>
             <p>Category 1</p>
             <p>Category 1</p>
             <p>Category 1</p>
@@ -155,9 +155,63 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
+
+            <div className='read-more-div'>
+              <button>Read More</button>
+            </div>
             
           </div>
+
+          
+
         </div>
+
+        <div className='newsletter-div'>
+          
+          <div className='newsletter-subdiv'>
+            <div className='newsletter-img'>
+            </div>
+            <div className='newsletter-text'>
+              <p>Subscribe to our newsletter</p>
+              <p>Master Crypto, Blockchain, DeFi, NFT, GAME-Fi and so much more with available resources for free! Join our Newsletter and get alert when new articles, topics, or courses are published.</p>
+            </div>
+            <div className='subscribe'>
+              <input type='email' placeholder='Email Address' />
+              <button>Subscribe</button>
+              <p>We promise not to spam you.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <footer className='footer'>
+          <div className='footer-text'>
+            <p>Dive into Web3</p>
+            <div>
+              <p>The latest articles and courses to help you upgrade your skills and learn the latest trends. Master web Development with these amazing resources that are available for free!</p>
+            </div>
+            <div>
+              <ul>
+                <li>Home</li>
+                <li>Blogs</li>
+                <li>Courses</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+
+          </div>
+          <div className='footer-icon'>
+
+          </div>
+        </footer>
 
         
 

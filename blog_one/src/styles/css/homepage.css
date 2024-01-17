@@ -64,12 +64,26 @@ body{
     height: 100%;
     display: flex;
     background-color: inherit;
+    margin-bottom: 2rem;
 }
 .blogs .blog-categories{
     width: 20%;
     margin: 0;
     padding: 0;
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-categories p{
+    font-size: 1.5rem;
+}
+
+.blog-categories p:first-of-type{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .blogs .latestblogs{
@@ -105,7 +119,6 @@ body{
 }
 
 .main-news-insight .news-insight-pic-div{
-    background-color: red;
     height: 12rem;
     padding: 0;
     margin: 0;
@@ -135,4 +148,50 @@ body{
 
 .news-insight-timestamp p:first{
     float: left;
+}
+
+.read-more-div{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.read-more-div button{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 10rem;
+}
+
+.newsletter-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-subdiv{
+    width: 75%;
+    border-radius: 2rem;
+    background-color: skyblue;
+}
+
+.newsletter-subdiv p:first-of-type{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.newsletter-subdiv p:nth-of-type(2){
+    font-size: 1.5rem;
+}
+
+.newsletter-subdiv .newsletter-img{
+    width: 40%;
+}
+.newsletter-subdiv .newsletter-text{
+    display: inline;
+    width: 60%;
+}
+
+.newsletter-subdiv .subscribe{
+    width: 100%;
 }
