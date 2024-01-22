@@ -167,6 +167,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .newsletter-subdiv{
@@ -194,4 +195,76 @@ body{
 
 .newsletter-subdiv .subscribe{
     width: 100%;
+}
+
+.footer{
+    min-height: 70vh;
+    background-color: skyblue;
+    padding: 2rem 5rem;
+}
+
+.footer .footer-text-topic{
+    font-size: 3rem;
+}
+
+.footer .footer-text{
+    display: flex;
+}
+
+.firstfootercol{
+    width: 50%;
+}
+
+.firstfootercol p:first-of-type{
+    font-size: 1.5rem;
+}
+.firstfootercol p:first-of-type{
+    font-size: 1.5rem;
+}
+
+.secondfootercol{
+    width: 25%;
+}
+.secondfootercol li{
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+.thirdfootercol{
+    width: 25%;
+}
+
+.thirdfootercol li{
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+.footer-icon{
+    margin-top: 2rem;
+}
+
+.footer-icon .footer-brands{
+    font-size: 2rem;
+    display: flex;
+    padding: 0 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-mini-details{
+    display: flex;
+}
+
+.footer-mini-details .copyright{
+    float: left;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.footer-mini-details .aboutme{
+    float: right;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.footer-icon .aboutme p:first-of-type{
+    float: right;
 }

@@ -2,6 +2,9 @@ import React from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "../styles/css/homepage.css";
+import "../icon/fontawesome-icons/css/all.css"
+import "../icon/fontawesome-icons/css/fontawesome.css"
+import "../icon/fontawesome-icons/css/brands.css"
 //import sam_pic from "../images/sam_pic"
 
 const Homepage = () => {
@@ -185,12 +188,14 @@ const Homepage = () => {
         </div>
 
         <footer className='footer'>
+          <p className='footer-text-topic'>Dive into Web3</p>
           <div className='footer-text'>
-            <p>Dive into Web3</p>
-            <div>
+            
+            <div className='firstfootercol'>
+             
               <p>The latest articles and courses to help you upgrade your skills and learn the latest trends. Master web Development with these amazing resources that are available for free!</p>
             </div>
-            <div>
+            <div className='secondfootercol'>
               <ul>
                 <li>Home</li>
                 <li>Blogs</li>
@@ -198,7 +203,7 @@ const Homepage = () => {
                 <li>Youtube</li>
               </ul>
             </div>
-            <div>
+            <div className='thirdfootercol'>
               <ul>
                 <li>About</li>
                 <li>Contact</li>
@@ -209,7 +214,24 @@ const Homepage = () => {
 
           </div>
           <div className='footer-icon'>
-
+            <div className='footer-brands'>
+              <p><i className='fa fa-brands fa-facebook'></i></p>
+              <p><i className='fa fa-brands fa-instagram'></i></p>
+              <p><i className='fa fa-brands fa-linkedin'></i></p>
+              <p><i className='fa fa-brands fa-youtube'></i></p>
+              <p><i className='fa fa-brands fa-slack'></i></p>
+              <p><i className='fa fa-brands fa-discord'></i></p>
+              
+            </div>
+            <div className='footer-mini-details'>
+              <div className='copyright'>
+                <p>COPYRIGHT @ 2022 Dive Into Skills</p>
+              </div>
+              <div className='aboutme'>
+                <p>Developed by: Ahmad Raza</p>
+              </div>
+            </div>
+            
           </div>
         </footer>
 
