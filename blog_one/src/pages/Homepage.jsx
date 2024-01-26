@@ -8,6 +8,10 @@ import "../icon/fontawesome-icons/css/brands.css"
 //import sam_pic from "../images/sam_pic"
 
 const Homepage = () => {
+
+  const nextPage = () =>{
+    alert("hello, there")
+  }
   return (
     <HelmetProvider>
       <Helmet>
@@ -29,22 +33,27 @@ const Homepage = () => {
           <a href=''>CryptoEdu Icon</a>
           <div>
             <ul className='nav_bar_con'>
-              <li>Home</li>
-              <li>Blog</li>
-              <li>Courses</li>
-              <li>About</li>
-              <li className='contact'>Contact</li>
+              <li><a href=''>Home</a></li>
+              <li><a href=''>Blog</a></li>
+              <li><a href=''>Courses</a></li>
+              <li><a href=''>About</a></li>
+              <li className='contact' href=''>Contact<a></a></li>
             </ul>
           </div>
         </nav>
 
         <div className='intro'>
-          
-          <p>The latest articles and courses to improve your crypto knowledge.</p>
-          <p>Master Blockchain, Web3, Defi, NFT, Game-Fi and many more.</p>
+          <div className='intro-text'>
+            <p>The latest articles and courses to improve your crypto knowledge.</p>
+            <p>Master Blockchain, Web3, Defi, NFT, Game-Fi and many more.</p>
 
-          <input type='email' placeholder='Email Address' />
-          <button>Subscribe</button>
+            <input type='email' placeholder='Email Address' />
+            <button>Subscribe</button>
+          </div>
+          <div className='intro-img'>
+            <img className='intro-img-main' src={ require ("../images/sam_pic.png")} alt='intro image' />
+          </div>
+            
         </div>
 
         <div className='blogs-intro'>
@@ -69,11 +78,17 @@ const Homepage = () => {
                   <div className='news-insight-pic-div'>
                     <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
                   </div>
-                  <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                  <div className='news-insight-text' onClick={nextPage}>
+                    <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                  
+                  </div>
                   <div className='news-insight-timestamp'>
                     <p>24/04/2022</p>
                     <p>By: Samuel Adeyemo</p>
+                  </div>
+                  <div className='clear'>
+
                   </div>
                 </div>
               </div>
@@ -115,7 +130,7 @@ const Homepage = () => {
               <div className='insight-padding'>
                 <div className='main-news-insight'>
                   <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
+                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")}  />
                   </div>
                   <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>

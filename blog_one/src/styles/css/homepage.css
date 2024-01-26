@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav_bar{
@@ -13,7 +14,8 @@ body{
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    width: 80%;
+    width: 60%;
+    float: right;
 }
 .nav_bar_con{
     display: flex;
@@ -24,29 +26,55 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 3rem;
+}
+.nav_bar_con li{
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav_bar_con li a {
+    text-decoration: none;
+    color: inherit
 }
 
 .intro{
     /*margin-top: 5rem;*/
     background-color: skyblue;
-    height: 80vh;
+    min-height: 80vh;
 }
 
-.intro p:first-of-type{
+.intro .intro-text{
+    float: left;
+    width: 50%;
+    padding: 0 0 0 2rem;
+}
+
+.intro .intro-img{
+    float: right;
+    width: 40%;
+    padding: 2rem 0;
+}
+
+
+
+.intro .intro-text p:first-of-type{
     font-size: 3rem;
+    color: white;
 }
 
-.intro p:nth-of-type(2){
+.intro .intro-text p:nth-of-type(2){
     font-size: 1.8rem;
 }
 
-.intro input:first-of-type{
+.intro .intro-text input:first-of-type{
     width: 30rem;
     height: 3rem;
     font-size: 2rem;
 }
 
 .blogs-intro{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,20 +163,23 @@ body{
 
 .main-news-insight .news-insight-timestamp{
     display: flex;
-    flex-direction: row;
+    border-radius: 0 0 2rem 2rem;
     background-color: inherit;
-    padding: 0;
+    padding: 0 0.5rem;
     margin: 0;
+    text-align: end;
 }
 
-.news-insight-timestamp p{
-    float: right;
-    background-color: inherit;
+.news-insight-timestamp p:nth-of-type(1){
+    text-align: left;
 }
 
-.news-insight-timestamp p:first{
-    float: left;
+.news-insight-timestamp p:nth-of-type(2){
+    
+    text-align: right;
 }
+
+
 
 .read-more-div{
     width: 100%;
@@ -267,4 +298,8 @@ body{
 }
 .footer-icon .aboutme p:first-of-type{
     float: right;
+}
+
+.clear{
+    clear: both;
 }
