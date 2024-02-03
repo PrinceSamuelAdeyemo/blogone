@@ -30,7 +30,7 @@ const Homepage = () => {
 
       <>
         <nav className='nav_bar'>
-          <a href=''>CryptoEdu Icon</a>
+          <a className='brandlogo' href=''><img className='brandlogoimg' src={require("../images/_sam_pic.png")} alt='CryptoEdu'/></a>
           <div>
             <ul className='nav_bar_con'>
               <li><a href=''>Home</a></li>
@@ -51,7 +51,7 @@ const Homepage = () => {
             <button>Subscribe</button>
           </div>
           <div className='intro-img'>
-            <img className='intro-img-main' src={ require ("../images/sam_pic.png")} alt='intro image' />
+            <img className='intro-img-main' src={ require ("../images/_sam_pic.png")} alt='intro image' />
           </div>
             
         </div>

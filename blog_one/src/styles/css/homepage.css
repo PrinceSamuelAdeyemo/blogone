@@ -1,4 +1,6 @@
 body{
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,6 +10,19 @@ body{
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+
+.nav_bar .brandlogo{
+    margin-left: 1rem;
+    width: 5%;
+    height: 3rem;
+    background-color: red;
+}
+
+.brandlogo .brandlogoimg{
+    height: inherit;
+    background-color: inherit;
+    width: 100%;
 }
 
 .nav_bar div{
@@ -48,15 +63,17 @@ body{
     float: left;
     width: 50%;
     padding: 0 0 0 2rem;
+    
 }
 
 .intro .intro-img{
     float: right;
     width: 40%;
-    padding: 2rem 0;
 }
 
-
+.intro-img-main{
+    width: 80%;
+}
 
 .intro .intro-text p:first-of-type{
     font-size: 3rem;
@@ -229,9 +246,9 @@ body{
 }
 
 .footer{
-    min-height: 70vh;
+    min-height: 60vh;
     background-color: skyblue;
-    padding: 2rem 5rem;
+    padding: 0.1rem 5rem;
 }
 
 .footer .footer-text-topic{
