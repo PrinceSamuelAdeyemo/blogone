@@ -15,14 +15,16 @@ body{
 .nav_bar .brandlogo{
     margin-left: 1rem;
     width: 5%;
-    height: 3rem;
-    background-color: red;
+    height: 4rem;
+    background-color: black;
+    border-radius: 50%;
 }
 
 .brandlogo .brandlogoimg{
     height: inherit;
     background-color: inherit;
     width: 100%;
+    border-radius: 50%;
 }
 
 .nav_bar div{

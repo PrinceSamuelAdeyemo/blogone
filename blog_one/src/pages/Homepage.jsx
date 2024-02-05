@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "../styles/css/homepage.css";
@@ -7,11 +7,20 @@ import "../icon/fontawesome-icons/css/fontawesome.css"
 import "../icon/fontawesome-icons/css/brands.css"
 //import sam_pic from "../images/sam_pic"
 
+import { main_api } from "../components/Urls"
+
 const Homepage = () => {
 
   const nextPage = () =>{
     alert("hello, there")
   }
+  useEffect(() => {
+    var get_categories = fetch((`{main_api}/categories`, {
+
+    }))
+  })
+
+
   return (
     <HelmetProvider>
       <Helmet>
