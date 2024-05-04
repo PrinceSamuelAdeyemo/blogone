@@ -9,6 +9,9 @@ from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+#Default python libraries
+import json
+
 # Create your views here.
 def stuff(request):
     
@@ -46,9 +49,11 @@ def stuff(request):
     
 class Categories(APIView):
     def get(self, request):
-        return Response("Get Categories")
+        message = {"message":"Get Categories"}
+        return Response(message)
     
     def post(self, request):
+        print(request.data)
         return Response("POst Categories")
     
 class Posts(APIView):

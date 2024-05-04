@@ -1,6 +1,8 @@
 import React, { useEffect, useState} from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+import NewsCard from './NewsCard';
+
 import "../styles/css/homepage.css";
 import "../icon/fontawesome-icons/css/all.css"
 import "../icon/fontawesome-icons/css/fontawesome.css"
@@ -14,10 +16,25 @@ const Homepage = () => {
   const nextPage = () =>{
     alert("hello, there")
   }
-  useEffect(() => {
-    var get_categories = fetch((`{main_api}/categories`, {
 
-    }))
+  const check = async() => {
+    await fetch('http://localhost:8000/api/categories')
+  .then(response => (
+    response = response.json()
+  ))
+  .then((data) => (
+    console.log(data)
+   ) )
+  .catch(error => {
+    console.log(error)
+  });
+
+  console.log("HH")
+  }
+
+  useEffect(() => {
+    check()
+    console.log("Check function should have triggered!")
   })
 
 
@@ -57,7 +74,7 @@ const Homepage = () => {
             <p>Master Blockchain, Web3, Defi, NFT, Game-Fi and many more.</p>
 
             <input type='email' placeholder='Email Address' />
-            <button>Subscribe</button>
+            <button onClick={check}>Subscribe</button>
           </div>
           <div className='intro-img'>
             <img className='intro-img-main' src={ require ("../images/_sam_pic.png")} alt='intro image' />
@@ -81,111 +98,7 @@ const Homepage = () => {
 
           <div className='latestblogs'>
             
-            <div className='news-insight'>
-              <div className='insight-padding'>
-                <div className='main-news-insight'>
-                  <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
-                  </div>
-                  <div className='news-insight-text' onClick={nextPage}>
-                    <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  
-                  </div>
-                  <div className='news-insight-timestamp'>
-                    <p>24/04/2022</p>
-                    <p>By: Samuel Adeyemo</p>
-                  </div>
-                  <div className='clear'>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='news-insight'>
-              <div className='insight-padding'>
-                <div className='main-news-insight'>
-                  <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
-                  </div>
-                  <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  <div className='news-insight-timestamp'>
-                    <p>24/04/2022</p>
-                    <p>By: Samuel Adeyemo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='news-insight'>
-              <div className='insight-padding'>
-                <div className='main-news-insight'>
-                  <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
-                  </div>
-                  <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  <div className='news-insight-timestamp'>
-                    <p>24/04/2022</p>
-                    <p>By: Samuel Adeyemo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='news-insight'>
-              <div className='insight-padding'>
-                <div className='main-news-insight'>
-                  <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")}  />
-                  </div>
-                  <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  <div className='news-insight-timestamp'>
-                    <p>24/04/2022</p>
-                    <p>By: Samuel Adeyemo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='news-insight'>
-              <div className='insight-padding'>
-                <div className='main-news-insight'>
-                  <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
-                  </div>
-                  <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  <div className='news-insight-timestamp'>
-                    <p>24/04/2022</p>
-                    <p>By: Samuel Adeyemo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='news-insight'>
-              <div className='insight-padding'>
-                <div className='main-news-insight'>
-                  <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
-                  </div>
-                  <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  <div className='news-insight-timestamp'>
-                    <p>24/04/2022</p>
-                    <p>By: Samuel Adeyemo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='read-more-div'>
-              <button>Read More</button>
-            </div>
+            <NewsCard/>
             
           </div>
 
