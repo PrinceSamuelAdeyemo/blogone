@@ -6,12 +6,17 @@ const NewsCard = () => {
               <div className='insight-padding'>
                 <div className='main-news-insight'>
                   <div className='news-insight-pic-div'>
-                    <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
+                    <a href='#'>
+                      <img className='news-insight-pic' src = {require("../images/sam__pic.png")} />
+                    </a>
+                    
                   </div>
                   <div className='news-insight-text'>
-                    <p><h2>Title goes here Title goes here Title goes here Title goes here </h2></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
-                  
+                    <a href='#'>
+                      <p><h2>RONALDO DOES IT AGAIN!!!</h2></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                    </a>
+                    
                   </div>
                   <div className='news-insight-timestamp'>
                     <p>24/04/2022</p>

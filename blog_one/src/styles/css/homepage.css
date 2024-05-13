@@ -172,8 +172,12 @@ body{
     border-radius: 1rem 1rem 0 0;
 }
 
+.main-news-insight .news-insight-text{
+    padding: 0.2rem 0.5rem;
+}
+
 .news-insight-pic-div .news-insight-pic{
-    border-radius: inherit;
+    border-radius: 1rem 1rem 0 0;
     width: 100%;
     height: 100%;
     padding: 0;

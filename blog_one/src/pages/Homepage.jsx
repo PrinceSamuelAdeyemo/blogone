@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import NewsCard from './NewsCard';
+import NewsCard from '../components/NewsCard';
 
 import "../styles/css/homepage.css";
 import "../icon/fontawesome-icons/css/all.css"
